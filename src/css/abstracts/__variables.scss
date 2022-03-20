@@ -1,0 +1,28 @@
+@use '../base/_fonts';
+$goldenColor: #DCC394;
+// Big Header
+$normal-font-size: normal;
+$big-header-weight: 300;
+$big-header-size: 44px;
+$big-header-spacing: -1px;
+//font-families:
+$font-roboto: Roboto;
+$font-times: Times;
+//Normal Text
+$normal-font-size: 18px;
+$normal-font-color: #4F4F4F;
+//Button 1
+$red: #DC7666;
+$background-button-linear: linear-gradient(95.16deg, #DC7666 45.86%, #FBDE53 209.75%);
+$background-orange-yellow:linear-gradient(95.16deg, #DC7666 45.86%, #FBDE53 209.75%);
+$border-radius-button: 8px;
+$padding-button: 10px 42px;
+//card
+$card-header-color: #333333;
+$category-color: #4F4F4F;
+$medium-gray: #828282;
+$light-gray: #F2F2F2;
+$black-linear: linear-gradient(107.8deg, #121111 0%, #494747 104.12%);
+$dark-black-linear: linear-gradient(107.8deg, #121111 0%, #494747 104.12%);
+$opacity-black: rgba(0, 0, 0, 0.5);
+$nav-gray: #BDBDBD;
