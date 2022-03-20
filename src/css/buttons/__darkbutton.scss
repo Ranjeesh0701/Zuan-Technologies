@@ -1,0 +1,27 @@
+@use '../abstracts/_variables';
+.dark-btn {
+    font-family: $font-roboto;
+    border: none;
+    background: $black-linear;
+    border-radius: $border-radius-button;
+    padding: $padding-button;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover {
+        background: $dark-black-linear;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+        border-radius: 8px;
+        p {
+            margin: 0;
+            background: $background-button-linear;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+    }
+    p {
+        margin: 0;
+        background: $background-button-linear;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+}

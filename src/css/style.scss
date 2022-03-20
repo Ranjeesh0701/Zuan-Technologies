@@ -1,0 +1,21 @@
+@import 'abstracts/_variables';
+@import 'components/_home';
+@import 'components/_navbar';
+@import 'components/_YourCourses';
+@import 'base/_base';
+@import 'base/_fonts';
+@import 'base/_typography';
+@import 'buttons/_button1';
+@import 'buttons/_button2';
+@import 'buttons/_button3';
+@import 'buttons/_darkbutton';
+@import 'components/_YourCourses';
+@import 'components/_membership_banner';
+@import 'components/_popularCourses';
+@import 'components/_searchByCategory';
+@import 'components/_testimonial';
+@import 'components/_ExpertsOnZuan';
+@import 'components/_news_letter';
+* {
+    font-family: $font-roboto;
+}

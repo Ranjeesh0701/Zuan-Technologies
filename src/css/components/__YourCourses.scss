@@ -1,0 +1,130 @@
+@use '../base/_typography';
+@use '../base/_fonts';
+@use '../abstracts/_variables';
+.swiper {
+    width: 100%;
+    height: 100%;
+    // margin: 20px;
+}
+
+.swiperSlide-1 {
+    margin: 10px 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.your-courses {
+    position: relative;
+    & .your-courses-top {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $category-color;
+        border-radius: 10px 10px 0px 0px;
+        & .course-date {
+            color: #fff;
+            font-size: 12px;
+            position: relative;
+            &::after {
+                content: '';
+                background: #fff;
+                height: 100%;
+                width: 1px;
+                position: absolute;
+                top: 0;
+                right: -13px;
+            }
+        }
+        & .course-timing {
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
+
+.yourCourse {
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    & .your-courses {
+        font-family: $font-roboto;
+        & .your-courses-bottom {
+            & .details {
+                padding: 0px 20px;
+                & .title {
+                    color: $card-header-color;
+                    line-height: 25px;
+                    padding-top: 13px;
+                }
+                & .category {
+                    font-size: 10px;
+                    color: $category-color;
+                    border: 0.5px solid #828282;
+                    box-sizing: border-box;
+                    border-radius: 4px;
+                    margin-top: -9px;
+                    margin-bottom: 25px;
+                    width: auto;
+                    padding: 0px 20px;
+                    width: 40%;
+                    text-align: center;
+                }
+            }
+            & .range {
+                & .course-completion {
+                    font-size: 13px;
+                    color: $card-header-color;
+                }
+                & .outer-range {
+                    width: 100%;
+                    background-color: $light-gray;
+                    height: 6px;
+                    & .inner-range {
+                        background: linear-gradient(134.62deg, #DC7666 -8.39%, #FF7E6D 70.13%);
+                        border-radius: 4px;
+                        height: 100%;
+                    }
+                    & .not-completed {
+                        width: 50%;
+                    }
+                    & .completed {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.rating-text {
+    font-size: 14px;
+    color: $medium-gray;
+}
+
+.category-text {
+    margin: 0px;
+}

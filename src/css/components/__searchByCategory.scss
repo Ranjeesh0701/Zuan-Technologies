@@ -1,0 +1,43 @@
+@use '../abstracts/_variables';
+.dark-banner {
+    background-color: $card-header-color;
+}
+
+.swiperSlide2 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 10px;
+    padding: 25px 20px;
+}
+
+.select-by-category {
+    font-family: $font-roboto;
+    border-radius: 10px;
+    & .the-category {
+        border-radius: 10px;
+        & .categoryName {
+            color: $card-header-color;
+            line-height: 25px;
+            padding-top: 13px;
+        }
+        & .avaiableCourses {
+            font-size: 10px;
+            color: $medium-gray;
+        }
+    }
+}

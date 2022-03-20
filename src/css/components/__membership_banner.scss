@@ -1,0 +1,16 @@
+@use '../abstracts/_variables';
+.membership-banner {
+    background-image: $background-orange-yellow;
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.2), inset 0px -8px 8px rgba(0, 0, 0, 0.2);
+    & .offer-text {
+        & .header {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            color: $opacity-black
+        }
+        & .para {
+            font-size: 14px;
+        }
+    }
+}

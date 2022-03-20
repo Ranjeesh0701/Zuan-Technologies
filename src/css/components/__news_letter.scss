@@ -1,0 +1,37 @@
+@use '../abstracts/_variables';
+.signup-newsletter {
+    background: $background-orange-yellow;
+    box-shadow: inset 0px 8px 8px rgba(0, 0, 0, 0.2), inset 0px -8px 8px rgba(0, 0, 0, 0.2);
+    & .newletter-text {
+        & .header {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 40px;
+            color: $opacity-black
+        }
+        & .para {
+            font-size: 14px;
+            color: #fff;
+        }
+        & .inputAndButton {
+            padding-top: 33px;
+            @media (max-width: 991px) {
+                padding-top: 18px;
+            }
+            & .email-sender-input {
+                font-size: 14px;
+                width: 100%;
+                padding: 10px 20px;
+                background: $background-orange-yellow;
+                /* white */
+                border: 1px solid #FFFFFF;
+                color: #fff;
+                box-sizing: border-box;
+                border-radius: 8px;
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
